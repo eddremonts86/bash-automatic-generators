@@ -1,69 +1,6 @@
 #!/bin/bash
 # -*- ENCODING: UTF-8 -*-
 
-  echo "Drupal 8 Install"
-  echo " -- To use this script you need --"
-  echo " - PHP > 5.6 "
-  echo " - Composer"
-  echo " - Drupar Console"
-  echo " - Drush > 8.0.12"
-
- ## Variable
-    #system
-        _systemUser=edd
-        _testnumber=_livefodbald
-    #apist
-        _site=livefodbald                                 #Folder name in the file system
-        _id_site=13                                       #API site id
-
-    #site conf
-        _langcode=en
-        _site_name=steveCMSclient
-        _site_mail=contact@client1.dev
-        _account_name=admin
-        _account_mail=contact@client1.dev
-        _account_pass=admin
-
-    #Data Base Conf
-        _type=mysql
-        _host=localhost
-        _name=steveBase$_testnumber
-        _user=root
-        _pass=root
-        _port=3316
-
-    #Drupal console patch
-        _data=$(pwd)
-        _url=$_data/$_site/console/
-
-    #THEME
-    #_base_THEME=stevethemebase                                     #0
-    _THEME=live_fodbald                                            #1
-    #_THEME=se_fodbald                                              #2
-    #_THEME=stevethemeracingbase                                    #3
-    
-    #THEME CONFIGURATION
-    #_base_THEME_CONF=rp_cms_steve_base_config                            #0
-    #_THEME_CONF=rp_cms_steve_integration_horseracing               #3
-    _THEME_CONF=rp_cms_steve_integration_live_fodbald              #1
-    #_THEME_CONF=rp_cms_steve_integration_se_fodbald                #2
-    #_THEME_CONF=rp_cms_steve_watchfooty_config                     #5
-
-    #Repository branch
-      #Modules  
-        #_m_branch=master
-        _m_branch=develop
-        #_m_branch=dailywork
-        
-      #themes
-        #_t_branch=master
-        _t_branch=develop
-        #_t_branch=dailywork
-               
-
-    #Admin Theme 
-    _admima_theme=material_admin
-
 ## Drupal Instalation
 
 #Create postgreSql db - pending 
@@ -76,7 +13,8 @@
         composer require drupal/console:~1.0    
         composer require guzzlehttp/guzzle-services    
         composer require cocur/slugify    
-
+ echo " We are done !!! Enjoy your new site. "
+    exit
 
 echo "---------------------------------"
 echo "CREATE DATABASE -  $_name - IF NOT EXISTS"
