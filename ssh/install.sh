@@ -1,6 +1,17 @@
 #!/bin/bash
 # -*- ENCODING: UTF-8 -*-
 
+# --- importing site configuration
+
+#_site_confg=live-fodbold.dk.sh
+#_site_confg=livefodboldstreams.dk.sh
+#_site_confg=sefodbod.dk.sh
+_site_confg=sesport.dk.sh
+#_site_confg=watchfooty.co.uk.sh
+
+_urlconf=$(pwd)
+. $_urlconf/sh_config/$_site_confg --source-only
+
 ## Drupal Instalation
 
 #Create postgreSql db - pending 
@@ -14,7 +25,6 @@
         composer require guzzlehttp/guzzle-services    
         composer require cocur/slugify    
  echo " We are done !!! Enjoy your new site. "
-    exit
 
 echo "---------------------------------"
 echo "CREATE DATABASE -  $_name - IF NOT EXISTS"

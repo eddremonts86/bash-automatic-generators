@@ -1,4 +1,3 @@
-
 #!/bin/bash
 # -*- ENCODING: UTF-8 -*-
 
@@ -12,10 +11,10 @@
  ## Variable
     #system
         _systemUser=edd
-        _testnumber=_livefodbaldstreams
+        _testnumber=_watchfooty
     #apist
-        _site=livefodbaldstreams
-        _id_site=13
+        _site=watchfooty                                 #Folder name in the file system
+        _id_site=13                                       #API site id
 
     #site conf
         _langcode=en
@@ -28,7 +27,7 @@
     #Data Base Conf
         _type=mysql
         _host=localhost
-        _name=steveBase$_testnumber
+        _name=steve$_testnumber
         _user=root
         _pass=root
         _port=3316
@@ -38,10 +37,10 @@
         _url=$_data/$_site/console/
 
     #THEME
-    _THEME=live_fodbald_streams
+        _base_THEME=stevethemebase                                     #0
 
     #THEME CONFIGURATION
-    _THEME_CONF=rp_cms_steve_integration_live_fodbald_streams
+        _THEME_CONF=rp_cms_steve_watchfooty_config                     #5
 
     #Repository branch
       #Modules
@@ -49,6 +48,7 @@
       #themes
         _t_branch=develop
       #Admin Theme
-        _admima_theme=material_admin
+        #_admima_theme=material_admin
+        _admima_theme=fortytwo_admin
 
-. ./install.sh --source-only
+ 

@@ -11,9 +11,9 @@
  ## Variable
     #system
         _systemUser=edd
-        _testnumber=_watchfooty
+        _testnumber=_sefodbold
     #apist
-        _site=watchfooty                                 #Folder name in the file system
+        _site=sefodbold                                 #Folder name in the file system
         _id_site=13                                       #API site id
 
     #site conf
@@ -31,16 +31,13 @@
         _user=root
         _pass=root
         _port=3316
-
     #Drupal console patch
         _data=$(pwd)
         _url=$_data/$_site/console/
-
     #THEME
-        _base_THEME=stevethemebase                                     #0
-
+        _THEME=se_fodbald                                              #2
     #THEME CONFIGURATION
-        _THEME_CONF=rp_cms_steve_watchfooty_config                     #5
+        _THEME_CONF=rp_cms_steve_integration_se_fodbald                #2
 
     #Repository branch
       #Modules
@@ -48,7 +45,5 @@
       #themes
         _t_branch=develop
       #Admin Theme
-        _admima_theme=material_admin
-
-
-. ./install.sh --source-only
+     #_admima_theme=material_admin
+        _admima_theme=fortytwo_admin

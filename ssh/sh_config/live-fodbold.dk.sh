@@ -11,10 +11,10 @@
  ## Variable
     #system
         _systemUser=edd
-        _testnumber=_sesport
+        _testnumber=_livefodbald
     #apist
-        _site=sesport                                 #Folder name in the file system
-        _id_site=13                                       #API site id
+        _site=livefodbald
+        _id_site=13
 
     #site conf
         _langcode=en
@@ -27,26 +27,26 @@
     #Data Base Conf
         _type=mysql
         _host=localhost
-        _name=steve$_testnumber
+        _name=steveBase$_testnumber
         _user=root
         _pass=root
         _port=3316
 
     #Drupal console patch
-        _data=$(pwd)
-        _url=$_data/$_site/console/
+     _data=$(pwd)
+     _url=$_data/$_site/console/
 
     #THEME
-        _base_THEME=stevethemebase                                     #0
+     _THEME=live_fodbald
 
     #THEME CONFIGURATION
-        _base_THEME_CONF=rp_cms_steve_base_config                            #0
+     _THEME_CONF=rp_cms_steve_integration_live_fodbald
+
     #Repository branch
       #Modules
         _m_branch=develop
       #themes
         _t_branch=develop
       #Admin Theme
-        _admima_theme=material_admin
-
-. ./install.sh --source-only
+       #_admima_theme=material_admin
+        _admima_theme=fortytwo_admin
