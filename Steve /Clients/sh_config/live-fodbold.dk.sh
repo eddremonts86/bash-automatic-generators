@@ -24,7 +24,7 @@
         _account_mail=contact@client1.dev
         _account_pass=admin
 
-    #Data Base Conf
+    #Data Base Config
         _type=mysql
         _host=localhost
         _name=steveBase$_testnumber
