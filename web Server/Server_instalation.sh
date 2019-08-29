@@ -47,8 +47,9 @@
          apt-get -y install nodejs 
   #--- npm
           apt-get -y install npm
-  #--- gulp 
-         npm install -g gulp 
+  #--- NPM Pack
+         npm install -g @vue/cli
+         npm install -g gulp
  
         drush init   
         drupal init
