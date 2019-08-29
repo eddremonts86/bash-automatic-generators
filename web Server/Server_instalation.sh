@@ -46,7 +46,7 @@
 # --- Install Node JS 
          apt-get -y install nodejs 
   #--- npm
-          apt-get -yinstall npm
+          apt-get -y install npm
   #--- gulp 
          npm install -g gulp 
  
